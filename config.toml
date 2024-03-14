@@ -15,7 +15,7 @@ theme = "FeelIt"
   keywords = ["Tech", "Blog"]
   defaultTheme = "auto"
   dateFormat = "2006-01-02"
-  images = ["/images/graph.jpg"]
+  images = ["/images/graph.png"]
  [params.search]
     enable = true
     # type of search engine ("lunr", "algolia")
