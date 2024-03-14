@@ -1,0 +1,99 @@
+baseURL = "http://example.org/"
+# [en, zh-cn, fr, ...] determines default content language
+defaultContentLanguage = "en"
+# language code
+languageCode = "en"
+title = "My New Hugo Site"
+
+# Change the default theme to be use when building the site with Hugo
+theme = "FeelIt"
+
+[params]
+  # FeelIt theme version
+  version = "1.0.X"
+  description = "m-dhia Tech Blog"
+  keywords = ["Tech", "Blog"]
+  defaultTheme = "auto"
+  dateFormat = "2006-01-02"
+  images = ["/graph.jpg"]
+ [params.search]
+    enable = true
+    # type of search engine ("lunr", "algolia")
+    type = "lunr"
+    # max index length of the chunked content
+    contentLength = 4000
+    # placeholder of the search bar
+    placeholder = ""
+    maxResultLength = 10
+    snippetLength = 30
+    highlightTag = "em"
+    absoluteURL = false
+[params.header]
+    # desktop header mode ("fixed", "normal", "auto")
+    desktopMode = "auto"
+    # mobile header mode ("fixed", "normal", "auto")
+    mobileMode = "auto"
+ 
+[params.header.title]
+      # URL of the LOGO
+      logo = "/images/flower.png"
+      # title name
+      name = "m-dhia Blog"
+      
+[params.home.profile]
+      enable = true
+      # URL of avatar shown in home page
+      avatarURL = "/images/avatar.jpg"
+      title = "m-dhia Blog "
+      # subtitle shown in home page
+      subtitle = "Welcome to my tech Blog"
+      # whether to use typeit animation for subtitle
+      typeit = true
+      # whether to show social links
+      social = true
+    # Home page posts
+[params.home.posts]
+      enable = true
+      # special amount of posts in each home posts page
+      paginate = 6
+      imagePreview = true
+      defaultHiddenFromHomePage = false
+[params.social]
+    GitHub = "https://github.com/m-dhia"
+    Facebook = "https://www.facebook.com/profile.php?id=100094350769686"
+
+[menu]
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "Categories"
+    url = "/categories/"
+    title = ""
+    weight = 3
+
+# Markup related configuration in Hugo
+[markup]
+  # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false is a necessary configuration (https://github.com/khusika/FeelIt/issues/158)
+    noClasses = false
