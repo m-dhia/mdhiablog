@@ -26,6 +26,9 @@ sudo usermod -aG docker ${USER} # Add your user to the Docker group
 
 Now, it's time to set up GitLab CE using Docker. GitLab CE (Community Edition) is a powerful and flexible tool for managing your Git repositories with a user-friendly interface. Perform the following steps in your terminal:
 
+> **Note:**  The size of the Docker image could reach up to 2 GB.
+
+
 ```bash
 mkdir Gitlab
 cd Gitlab
