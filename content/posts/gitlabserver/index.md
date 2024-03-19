@@ -1,7 +1,7 @@
 ---
 title: "Host Your Own Gitlab Server "
 date: 2024-03-19
-draft: true
+draft: false
 ---
 # Host Your Own Git Server with Docker
 
